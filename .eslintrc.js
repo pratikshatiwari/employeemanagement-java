@@ -1,17 +1,15 @@
 module.exports = {
-    env: {
-        browser: true,
-        es2021: true,
-        node: true,
-    },
-    extends: [
-        'eslint:recommended',
-    ],
-    parserOptions: {
-        ecmaVersion: 12,
-        sourceType: 'module',
-    },
-    rules: {
-        // Add or override rules here
-    },
+  "extends": ["eslint:recommended", "plugin:security/recommended"], // Use eslint-plugin-security
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "no-eval": "error",
+    "no-new-wrappers": "error",
+    "no-template-curly-in-string": "error",
+    "no-unsafe-regex": "error",
+    "security/detect-non-literal-regexp": "error", // Example of a security-related rule
+    // Add more security rules as required
+  }
 };
