@@ -48,8 +48,9 @@ jobs:
             -Dsonar.organization=pratikshatiwari \
             -Dsonar.host.url=https://sonarcloud.io \
             -Dsonar.sources=.
-            -Dsonar.java.binaries= **/*.java
+            #-Dsonar.java.binaries= **/*.java
             # -Dsonar.java.binaries=build/classes/java/main
+            -Dsonar.exclusions=**/*.java
           
       - name: Run SonarScanner 2
         env:
