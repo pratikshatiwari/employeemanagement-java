@@ -53,7 +53,7 @@ jobs:
             #-Dsonar.java.binaries= **/*.java
             # -Dsonar.java.binaries=build/classes/java/main
             # -Dsonar.exclusions=**/*.java
-            -Dsonar.java.binaries=target/classes
+            -Dsonar.java.binaries=EmployeeService/src/test/java/com/web/spring/EmployeeServiceApplicationTests.java
           
       - name: Run SonarScanner 2
         env:
