@@ -30,6 +30,8 @@ jobs:
       - name: Show All JAVA
         run: update-alternatives --config java
 
+      - name: Build Project
+        run: mvn clean install
 
       - name: Install SonarScanner
         run: |
