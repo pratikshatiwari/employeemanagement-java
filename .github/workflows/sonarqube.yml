@@ -52,8 +52,8 @@ jobs:
             # -Dsonar.sources=.
             #-Dsonar.java.binaries= **/*.java
             # -Dsonar.java.binaries=build/classes/java/main
-            # -Dsonar.exclusions=**/*.java
-            -Dsonar.java.binaries=${project.reporting.outputDirectory}/jacoco
+            -sonar.exclusions=**/*.java
+            #-Dsonar.java.binaries=${project.reporting.outputDirectory}/jacoco
           
       - name: Run SonarScanner 2
         env:
