@@ -44,7 +44,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           sonar-scanner \
-            -Dsonar.projectKey=pratikshatiwari_eshopOnWeb-correlation \
+            -Dsonar.projectKey=pratikshatiwari_employeemanagement-java \
             -Dsonar.organization=pratikshatiwari \
             -Dsonar.host.url=https://sonarcloud.io \
             -Dsonar.sources=.
