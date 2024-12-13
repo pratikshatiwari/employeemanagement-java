@@ -45,17 +45,17 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
-          # sonar-scanner \
-          #   -Dsonar.projectKey=pratikshatiwari_employeemanagement-java \
-          #   -Dsonar.organization=pratikshatiwari \
-          #   -Dsonar.host.url=https://sonarcloud.io \
-          sonar-scanner \
-            -Dsonar.projectKey=pratikshatiwari_employeemanagement-java \
-            -Dsonar.organization=pratikshatiwari \
-            -Dsonar.host.url=https://sonarcloud.io \
-            -Dsonar.java.binaries=target/classes \
-            -Dsonar.sources=src/main/java \
-            -Dsonar.exclusions=src/test/**
+         sonar-scanner \
+           -Dsonar.projectKey=pratikshatiwari_employeemanagement-java \
+           -Dsonar.organization=pratikshatiwari \
+           -Dsonar.host.url=https://sonarcloud.io \
+         # sonar-scanner \
+         #   -Dsonar.projectKey=pratikshatiwari_employeemanagement-java \
+         #   -Dsonar.organization=pratikshatiwari \
+         #   -Dsonar.host.url=https://sonarcloud.io \
+         #   -Dsonar.java.binaries=target/classes \
+         #   -Dsonar.sources=src/main/java \
+         #   -Dsonar.exclusions=src/test/**
           
       - name: Run SonarScanner 2
         env:
